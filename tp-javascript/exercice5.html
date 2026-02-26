@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice 5</h1>
+    <h1>Ma fiche de présentation</h1>
+       <p id="nomComplet">...</p>
+       <p id="age">...</p>
+       <p id="ville">...</p>
+       <p id="presentation">...</p>
+    <script>
+        let prenom = "Adnane";
+        let nom = "ELOUALI";
+        let monAge = 19;
+        let maVille = "Marrakech";
+
+        document.getElementById("nomComplet").innerHTML = `<strong>Nom :</strong> ${prenom} ${nom}`;
+        document.getElementById("ville").innerHTML = `<strong>Ville :</strong> ${maVille}`;
+        document.querySelector("#age").innerHTML = `<strong>Âge :</strong> ${monAge} ans`;
+
+        // Construire une phrase complète pour la présentation finale.
+        let phrasePresentation = `Je m'appelle ${prenom} ${nom}, j'ai ${monAge} ans et j'habite à ${maVille}.`;
+        // J'affiche cette phrase dans le dernier paragraphe.
+        document.getElementById("presentation").innerHTML = phrasePresentation;
+
+        // Modifier dynamiquement le titre de l'onglet.
+        document.title = "Fiche de " + prenom;
+    </script>
+  </body>
+</html>

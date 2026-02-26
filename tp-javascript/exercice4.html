@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice 4</h1>
+    <p>Ouvrez la console du navigateur (F12) pour voir le résultat.</p>
+    
+
+    <script>
+        let prenom = prompt("Quel est votre prénom ?");
+
+        let ageSaisie = prompt("Quel est votre âge ?");
+
+        // Convertir la saisie textuelle en un type nombre.
+        let age = Number(ageSaisie);
+
+        let anneeNaissance = 2026- age;
+
+        // Alerter l'utilisateur avec son année de naissance calculée
+        alert(`Bonjour ${prenom} ! Vous êtes né(e) vers ${anneeNaissance}.`);
+
+        // Je demande si les infos doivent apparaître dans la console.
+        let veutAfficher = confirm("Afficher vos informations dans la console ?");
+
+        // Vérifier le choix de l'utilisateur avant d'afficher.
+        if (veutAfficher) {
+            console.log("Récapitulatif d'utilisateur");
+            console.log("Prénom :", prenom);
+            console.log("Âge :", age);
+            console.log("Année de naissance estimée :", anneeNaissance);
+        } else {
+            console.log("L'utilisateur a choisi de ne pas afficher ses infos.");
+        }
+      
+    </script>
+  </body>
+</html>
