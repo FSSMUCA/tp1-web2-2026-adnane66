@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice 3</h1>
+    <p>Ouvrez la console du navigateur (F12) pour voir le résultat.</p>
+    
+
+    <script>
+        // Fixer le taux de TVA avec une constante
+        const TAUX_TVA = 0.20;
+        let prixHT = 150;
+
+        let montantTva = prixHT * TAUX_TVA;
+        let prixTTC = prixHT + montantTva;
+        // J'utilise les backticks pour afficher le récapitulatif complet.
+        console.log(`Prix HT : ${prixHT} € | TVA (20%) : ${montantTva} € | Prix TTC : ${prixTTC} €`);
+      
+    </script>
+  </body>
+</html>

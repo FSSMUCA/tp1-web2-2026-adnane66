@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice 6</h1>
+    <p>Ouvrez la console du navigateur (F12) pour voir le résultat.</p>
+   
+
+    <script>
+        // Correction Des Variables 
+
+        // "1erPrix" est invalide car il commence par un chiffre.
+        let premierPrix = 100;
+
+        // "deuxieme prix" est invalide à cause de l'espace.
+        let deuxiemePrix = 80;
+
+        // "prix-minimum" est invalide car le tiret est interprété comme une soustraction.
+        let prixMinimum = 50;
+
+        // "var" est invalide car c'est un mot réservé du langage JavaScript.
+        let valeurVariable = 200;
+
+        // "PrixMaximum" est valide mais on préfère le p minuscule au début.
+        let prixMaximum = 300;
+        
+        // On additionne toutes les variables corrigées.
+        let prixMoyen = (premierPrix + deuxiemePrix + prixMinimum + valeurVariable + prixMaximum) / 5;
+
+        // Affichage des résultats demandés
+        console.log("Prix moyen : " + prixMoyen);
+        console.log("Le prix minimum est : " + prixMinimum);
+        console.log("Le prix maximum est : " + prixMaximum);
+      
+    </script>
+  </body>
+</html>
